@@ -66,30 +66,30 @@ textarea::placeholder {
     color:#bbbec9be;
 }
 
-/*estilização de todos os botões*/
+/* estilização dos botões */
 button {
     width: 2.2rem;
     height: 2.3rem;
     border-radius: 5px;
-    border:none;
+    border: none;
 }
 
-/* estilização quando os botões são clicado */
-button:active {
-    border:solid 1px;
-    border-color:var(--color-active);
-    background-color:var(--background-active);
-}
-
-/* display grid dos botões*/
+/* display flex dos botões*/
 .icons {
-    display:grid;
-    grid-template-columns: 0.4rem 2.2rem 0.5rem 2.2rem auto auto 4.5rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.5rem; /* espaçamento de 0.5rem nas bordas esquerda e direita */
     margin-top: 0.5rem;
-}
+  }
+  
+  .reacoes {
+    display: flex;
+    gap: 0.5rem; /* espaço entre os botões de reação */
+  }
 
 /* grid individual dos botões*/
-#happ {
+#happy {
     grid-column-start:4;
     grid-column-end:4;
     justify-self: center;
@@ -110,7 +110,6 @@ button:active {
     justify-self: center;
 }
   
-
 
 
 
